@@ -225,7 +225,7 @@ text-decoration: none;
 }
 
 .experience {
-  margin: 20px 20px 0 20px;
+  margin: 0px 20px 20px 20px;
   border-radius: 10px;
   border: 1px solid #545d68;
 }
@@ -302,4 +302,24 @@ border: 1px solid #545d68;
   color: #316dca;
   text-decoration: underline;
   font-weight:bold;
+}
+
+.button { 
+  position: fixed;
+  right: 20px;
+  padding: 6px 20px;
+  margin: 0 20px 20px;
+  bottom: 20px;
+  border-radius: 30px;
+  border: 2px solid #545d68;
+  display: block;
+  background: #2e353d;
+  }
+
+.button:hover { 
+  background: #222222;
+}
+
+.up {
+  font-size: 14px;
 }
