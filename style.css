@@ -323,3 +323,81 @@ border: 1px solid #545d68;
 .up {
   font-size: 14px;
 }
+
+/*SKILLS*/
+
+.skills_01 {
+  padding: 0px 25px;
+  margin: 0px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #545d68;
+}
+
+.soft_skills {
+  padding: 10px 25px;
+  margin: 10px 20px 0 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #545d68;
+  color: #adbac7;
+}
+
+.responsibilities {
+  padding: 10px 25px;
+  margin: 10px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #545d68;
+  color: #adbac7;
+}
+
+.hardskills {
+  display: none;          /* удаляет чекбокс*/
+}
+
+.blok {
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.hardskills:checked~.blok {
+  max-height: 0;
+}
+
+.hardskills_all::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 4px;
+  border: 6px solid #316dca;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.hardskills:checked~.hardskills_all::before {
+  transform: rotate(180deg) translateY(6px);
+  /*Единица deg определяет угол в градусах. Прямой уг = 90 градусов, полный оборот = 360 градусам. Используют и отрицательное значение (-90deg), нулевое (0deg) и дробное (36.6deg)*/
+}
+
+.hardskills_all {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+  user-select: none;
+  color: #316dca;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.hardskills_all:hover {
+  text-decoration: underline;
+}
+
+.list {
+  color: #ffffff;
+  margin: 0;
+  padding-right: 100px;
+}
